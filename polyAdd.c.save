@@ -1,0 +1,20 @@
+#include <stdio.h>
+void main() {
+ int s1,s2,i,j;
+ printf("Enter size of first and second polynomial \n");
+ scanf("%d %d",&s1,&s2);
+ int c1[s1],d1[s1],c2[s2],d2[s2];
+ printf("Enter coefficient and degree of first polynomial \n");
+ for(i=0;i<s1;i++) {
+  scanf("%d %d",&c1[i],&d1[i]
+ }
+ printf("Enter coefficient and degree of second polynomial \n");
+ for(i=0;i<s2;i++) {
+  scanf("%d %d",&c2[i],&d2[i]);
+ }
+ printf("First polynomial is \n");
+ for(i=0;i<s1;i++) {
+  printf("(%d ^(%d)) +",c1[i],d[i]);
+ }
+
+}
