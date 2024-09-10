@@ -58,3 +58,4 @@ void main() {
  scanf("%d",&repeat);
  if(repeat == 1) goto oper;
 }
+
