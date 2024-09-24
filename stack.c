@@ -7,17 +7,17 @@ int size,item;
 void pop(int stack[]) {
  if(top == -1) printf("Stack is empty");
  else if(top==0) {
-  printf("%d",stack[top]);
+  printf("popped %d \n",stack[top]);
   top = -1;
  }
  else if(top < size-1) {
-  printf("%d",stack[top]);
+  printf("popped %d \n",stack[top]);
   top--;
  }
 }
 
 void push(int stack[]) {
- printf("Enter item to push");
+ printf("Enter item to push: ");
  scanf("%d",&item);
  if(top == -1) {
   top = 0;
@@ -33,7 +33,7 @@ void push(int stack[]) {
 }
 
 void main() {
- printf("Enter the size of stack");
+ printf("Enter the size of stack: ");
  scanf("%d",&size);
  int choice,stack[size];
  oper:
@@ -54,7 +54,7 @@ void main() {
  }
  
  int repeat;
- printf("Do you wish to repeat this \n0 for yes \n 1 for no");
+ printf("Do you wish to repeat this \n0 for yes \n 1 for no \n");
  scanf("%d",&repeat);
  if(repeat == 1) goto oper;
 }
