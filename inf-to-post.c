@@ -47,7 +47,7 @@ int preced(char ch) {
 
 int main() {
     printf("Enter infix expression: ");
-    fgets(inf, MAX, stdin);
+    gets(inf);
     inf[strcspn(inf, "\n")] = '\0'; // Remove newline character from input
 
     int i = 0, j = 0;
@@ -81,4 +81,3 @@ int main() {
 
     return 0;
 }
-
