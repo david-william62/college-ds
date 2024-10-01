@@ -33,7 +33,7 @@ void dequeue(int arr[]) {
 void display(int arr[]) {
   if(f == -1 && r == -1) printf("Queue is empty");
   else {
-    for(int i = f; i<=r; i++) printf("%d ,",arr[i])
+    for(int i = f; i<=r; i++) printf("%d ,",arr[i]);
   }
 }
 

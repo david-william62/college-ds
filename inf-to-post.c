@@ -48,7 +48,7 @@ int preced(char ch) {
 int main() {
     printf("Enter infix expression: ");
     gets(inf);
-    inf[strcspn(inf, "\n")] = '\0'; // Remove newline character from input
+    inf[strcspn(inf, "\n")] = '\0';
 
     int i = 0, j = 0;
     while (inf[i] != '\0') {
@@ -79,5 +79,6 @@ int main() {
     printf("\nInfix Expression: %s", inf);
     printf("\nPostfix Expression: %s\n", post);
 
+// testttt 
     return 0;
 }
