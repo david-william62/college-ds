@@ -42,8 +42,7 @@ int main() {
   scanf("%d",&size);
   int q[size],ch;
 
-oper:
-  printf("Enter the operation to perform \n1 for enqueue \n2 for dequeue \n3 for display \n");
+  printf("Enter the operation to perform \n1 for enqueue \n2 for dequeue \n3 for display \n4 for exit \n");
   scanf("%d",&ch);
   switch(ch) {
     case 1:
@@ -55,12 +54,9 @@ oper:
     case 3:
       display(q);
       break;
+    case 4:
+      return 0;
     default:
       printf("Invalid choice \n");
   }
-
-  printf("Do you wish to perform operation again \n0 for no \n1 for yes \n");
-  scanf("%d",&ch);
-  if(ch == 0) return 1;
-  else goto oper;
 }
