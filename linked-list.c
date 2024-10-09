@@ -120,11 +120,11 @@ void delAny() {
 
 void display() {
   p = header;
+  printf("ADDRESS \t DATA \t LINK \n");
   while(p != NULL) {
-    printf("%d ,",p->data);
+    printf("%p \t %d \t %p \n",(void*)p, p->data, (void*)p->link);
     p = p->link;
   }
-  printf("\n");
 }
 
 
